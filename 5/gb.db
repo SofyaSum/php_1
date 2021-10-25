@@ -1,0 +1,23 @@
+DROP DATABASE IF EXISTS gb;
+CREATE DATABASE gb;
+USE gb;
+
+DROP TABLE IF EXISTS images;
+CREATE TABLE images (
+	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  image_path VARCHAR(120) UNIQUE,
+ 	viewed BIGINT
+);
+
+INSERT INTO images (image_path, viewed)
+VALUES 
+	("1.jpg", "0"),
+	("2.jpg", "0"),
+	("3.jpg", "0"),
+	("4.jpg", "0"),
+	("5.jpg", "0"),
+	("6.jpg", "0"),
+	("7.jpg", "0"),
+	("8.jpg", "0"),
+	("9.jpg", "0");
+  
